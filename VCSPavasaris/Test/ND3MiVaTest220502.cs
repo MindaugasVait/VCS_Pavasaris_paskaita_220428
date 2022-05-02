@@ -11,31 +11,29 @@ using VCSPavasaris.Page;
 
 namespace VCSPavasaris.Test
 {
-    class DemoqaTextBoxTest
+    class ND3MiVaTest220502
     {
         private static IWebDriver _driver;
         public static void OneTimeSetup()
         {
             _driver = new ChromeDriver();
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            _driver.Manage().Window.Maximize();           
+            _driver.Manage().Window.Maximize();
         }
         [OneTimeTearDown]
-        public static void OneTimeTearDown()
+        /*public static void OneTimeTearDown()
         {
             _driver.Quit();
-        }
+        }*/
         [Test]
-        public static void TestFullNameInputField()
+        public static void CheckBoxClickTest()
         {
-            string fullName = "Mindaugas";
             
-            DemoqaTextBoxPage demoqaTextBoxPage = new DemoqaTextBoxPage(_driver);
-            
-            demoqaTextBoxPage.NavigateToDefaultPage();
-            demoqaTextBoxPage.InsertTextToFullNameField(fullName);
-            demoqaTextBoxPage.ClickSubmitButton();
-            demoqaTextBoxPage.VerifyFullNameResult(fullName);
+
+            ND3MiVaPage220502 checkBoxClickTest = new ND3MiVaPage220502(_driver);
+
+            checkBoxClickTest.NavigateToDefaultPage();
+            checkBoxClickTest.ClickExpandAllButton();
 
         }
     }

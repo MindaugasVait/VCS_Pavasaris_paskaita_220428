@@ -58,9 +58,13 @@
     <Compile Include="ND1_220427.cs" />
     <Compile Include="ND2_220428.cs" />
     <Compile Include="ND2_MV_220428.cs" />
+    <Compile Include="Page\DemoQaTexBoxPage.cs" />
+    <Compile Include="Page\ND3MiVaPage220502.cs" />
     <Compile Include="Paskaita_ND_aptarimas_220427.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test3.cs" />
+    <Compile Include="Test\DemoqaTextBoxTest.cs" />
+    <Compile Include="Test\ND3MiVaTest220502.cs" />
     <Compile Include="TextBoxTest.cs" />
     <Compile Include="Uzduotis2_220427.cs" />
   </ItemGroup>

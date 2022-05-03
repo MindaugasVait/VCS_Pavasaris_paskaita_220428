@@ -17,7 +17,8 @@ namespace VCSPavasaris.BaigiamasisDarbas.TestBaigiamasis
         public static void TestExpandAllButton()
         {
             _baigiamasisPage.NavigateToDefaultPage();
-            
+            _baigiamasisPage.ClickVisosKategorijosButton();
+            _baigiamasisPage.ClickElektronikosKomponentai();
         }
     }
 }

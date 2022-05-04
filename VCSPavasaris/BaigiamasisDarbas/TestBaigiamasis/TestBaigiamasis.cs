@@ -14,11 +14,19 @@ namespace VCSPavasaris.BaigiamasisDarbas.TestBaigiamasis
     {
         [Test]
 
-        public static void TestExpandAllButton()
+        public static void TestSelectionButtons()
         {
             _baigiamasisPage.NavigateToDefaultPage();
+            _baigiamasisPage.ClosePopUp();
             _baigiamasisPage.ClickVisosKategorijosButton();
+            //_baigiamasisPage.ClickBodyElement();
             _baigiamasisPage.ClickElektronikosKomponentai();
+            _baigiamasisPage.ClickAktyvusKomponentai();
+            _baigiamasisPage.ClickPuslaidininkiai();
+            _baigiamasisPage.ClickVisiTranzistoriai();
+            _baigiamasisPage.ClickTranzistoriai();
+            _baigiamasisPage.ClickDaugiauFiltruButton();
+            _baigiamasisPage.ClickKorpusasTO220Selections();
         }
     }
 }
